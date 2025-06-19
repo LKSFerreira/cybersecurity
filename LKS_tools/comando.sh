@@ -1,0 +1,1 @@
+C:/Users/a914686/AppData/Local/Programs/Python/Python312/python.exe c:/Users/a914686/Downloads/ctf_hacker101/LKS_tools/main.py http://192.168.15.157/login -U usernames_100.txt -P 10-million-password-list-top-100.txt -f "inválidos"

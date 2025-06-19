@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+performance_log*
+login_attempts*
+valid_credentials*
+
 # C extensions
 *.so
 
