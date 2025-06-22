@@ -1,0 +1,14 @@
+## Confiança Zero versus Confiar, mas Verificar (Zero Trust versus Trust but Verify)
+
+Confiança é um tópico muito complexo; na realidade, não podemos funcionar sem confiança. Se alguém pensasse que o fornecedor do laptop instalou spyware no laptop, provavelmente acabaria reconstruindo o sistema. Se alguém desconfiasse do fornecedor do hardware, pararia de usá-lo completamente. Se pensarmos em confiança em nível de negócios, as coisas só se tornam mais sofisticadas; no entanto, precisamos de alguns princípios de segurança orientadores. Dois princípios de segurança que nos interessam em relação à confiança:
+
+*   Confiar, mas Verificar (Trust but Verify)
+*   Confiança Zero (Zero Trust)
+
+**Confiar, mas Verificar (Trust but Verify):** Este princípio ensina que devemos sempre verificar, mesmo quando confiamos em uma entidade e em seu comportamento. Uma entidade pode ser um usuário ou um sistema. Verificar geralmente requer a configuração de mecanismos de log (logging) adequados; verificar indica revisar os logs para garantir que tudo está normal. Na realidade, não é viável verificar tudo; basta pensar no trabalho que leva para revisar todas as ações tomadas por uma única entidade, como as páginas da Internet navegadas por um único usuário. Isso requer mecanismos de segurança automatizados, como proxy, sistemas de detecção de intrusão e sistemas de prevenção de intrusão.
+
+**Confiança Zero (Zero Trust):** Este princípio trata a confiança como uma vulnerabilidade e, consequentemente, atende a ameaças relacionadas a insiders (ameaças internas). Após considerar a confiança como uma vulnerabilidade, a confiança zero tenta eliminá-la. Ela ensina indiretamente: “nunca confie, sempre verifique”. Em outras palavras, toda entidade é considerada adversária até que se prove o contrário. A confiança zero não concede confiança a um dispositivo com base em sua localização ou propriedade. Essa abordagem contrasta com modelos mais antigos que confiariam em redes internas ou dispositivos de propriedade da empresa. Autenticação e autorização são necessárias antes de acessar qualquer recurso. Como resultado, se ocorrer alguma violação, o dano seria mais contido se uma arquitetura de confiança zero tivesse sido implementada.
+
+A **Microssegmentação (Microsegmentation)** é uma das implementações usadas para a Confiança Zero. Refere-se ao design onde um segmento de rede pode ser tão pequeno quanto um único host. Além disso, a comunicação entre segmentos requer autenticação, verificações de lista de controle de acesso e outros requisitos de segurança.
+
+Existe um limite para o quanto podemos aplicar a confiança zero sem impactar negativamente um negócio; no entanto, isso não significa que não devamos aplicá-la enquanto for viável.

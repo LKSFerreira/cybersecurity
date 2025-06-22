@@ -1,0 +1,1 @@
+Esta sala ofereceu uma visão geral das diferentes carreiras em segurança cibernética. Não se esqueça de que você pode aproveitar o treinamento online para conseguir o emprego dos seus sonhos em segurança cibernética. Para descobrir qual vaga em segurança cibernética é mais adequada para você, faça nosso divertido quiz, que você pode acessar clicando no botão "Ver Site" à direita.

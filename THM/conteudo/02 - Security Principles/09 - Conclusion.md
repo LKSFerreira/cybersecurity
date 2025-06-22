@@ -1,0 +1,9 @@
+## Conclusão
+
+Esta sala (módulo) cobriu vários princípios e conceitos relacionados à segurança. A esta altura, você já deve estar bem familiarizado com CIA e DAD e outros termos como autenticidade, repúdio, vulnerabilidade, ameaça e risco. Visitamos três modelos de segurança e a ISO/IEC 19249. Cobrimos diferentes princípios de segurança, como defesa em profundidade, confiar mas verificar, e confiança zero.
+
+Finalmente, vale mencionar o **Modelo de Responsabilidade Compartilhada (Shared Responsibility Model)**, especialmente com o aumento da dependência de serviços em nuvem. Vários aspectos são necessários para garantir a segurança adequada. Eles incluem hardware, infraestrutura de rede, sistemas operacionais, aplicações, etc. No entanto, os clientes que usam serviços em nuvem têm diferentes níveis de acesso, dependendo dos serviços em nuvem que utilizam. Por exemplo, um usuário de Infraestrutura como Serviço (IaaS - Infrastructure as a Service) tem controle total (e responsabilidade) sobre o sistema operacional.
+
+Por outro lado, um usuário de Software como Serviço (SaaS - Software as a Service) não tem acesso direto ao sistema operacional subjacente. Consequentemente, alcançar a segurança em um ambiente de nuvem exige que tanto o provedor de serviços em nuvem quanto o usuário façam suas partes. O Modelo de Responsabilidade Compartilhada é um framework de segurança em nuvem para garantir que cada parte esteja ciente de sua responsabilidade.
+
+Tendo finalizado a sala de Princípios de Segurança, você pode prosseguir para a sala de [Introdução à Criptografia (Intro to Cryptography)](./caminho/para/intro-to-cryptography.md).
