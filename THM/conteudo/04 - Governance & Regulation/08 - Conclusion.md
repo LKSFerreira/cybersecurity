@@ -1,0 +1,7 @@
+## Conclusão
+
+Esta sala (módulo) forneceu uma visão geral abrangente da importância de desenvolver um framework eficaz de governança e regulamentação da segurança da informação para proteger os ativos valiosos e as informações sensíveis de uma organização. Aprendemos sobre várias leis e regulamentos que regem a privacidade e a proteção de dados, como GDPR e PCI DSS. A sala também introduziu o conceito do Framework de Governança, Gerenciamento de Riscos e Conformidade (GRC) e explicou como desenvolver um programa GRC eficaz através de cenários do mundo real.
+
+Além disso, a sala destacou diferentes facilitadores de governança, como ISO/IEC 27001, NIST 800-53 e a Publicação Especial NIST 800-63B, e explicou como eles fornecem proteção de segurança da informação para uma organização. Devido ao surgimento contínuo de novas ameaças e vulnerabilidades, a segurança da informação é um conceito relativo. Embora alcançar 100% de segurança seja irrealista, uma organização proativa entende a necessidade de implementar continuamente políticas de segurança robustas para mitigar riscos e proteger dados sensíveis.
+
+Fique atento para mais salas (módulos) emocionantes sobre governar e regulamentar a segurança de uma organização através de políticas.
