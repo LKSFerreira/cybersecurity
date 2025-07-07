@@ -16,6 +16,9 @@ A melhor maneira de entender a engenharia social é vê-la em ação! Estes víd
 
 Hackers carismáticos ligando para sua companhia telefônica e tomando posse de sua conta é uma forma de engenharia social; no entanto, existem muitos outros tipos. A engenharia social é um tópico vasto, abrangendo qualquer ataque que se baseia em enganar humanos para dar acesso ao invasor, em vez de atacar a tecnologia diretamente. Embora a interação direta com os alvos seja o estilo mais comum de engenharia social, outros exemplos incluem deixar dispositivos de armazenamento USB em locais públicos (por exemplo, em estacionamentos de empresas) na esperança de que alguém (muitas vezes um funcionário da empresa) pegue um e o conecte a um computador sensível. De forma semelhante, os invasores podem deixar um "cabo de carregamento" conectado a uma tomada em um local público. Na realidade, o cabo contém software malicioso, como *keyloggers* ou ferramentas para assumir o controle do dispositivo da vítima.
 
+<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/e3eba5509524a8c1ac0f8b16e8c9e019.png" width="200px" />
+
+
 <details>
   <summary><b>Estudo de Caso: Stuxnet (Clique para Ler)</b></summary>
   
