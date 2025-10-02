@@ -222,7 +222,7 @@ echo ""
 
 # --- Contador regressivo de 5 segundos ---
 echo_fancy "🔄" "${COLOR_BOLD_MAGENTA}" "Terminal sera fechado em:"
-for i in 5 4 3 2 1; do
+for i in 10 9 8 7 6 5 4 3 2 1; do
     echo_fancy "⏱️" "${COLOR_BOLD_CYAN}" "   $i..."
     sleep 1
 done
