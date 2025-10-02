@@ -50,20 +50,11 @@ Este script (`linux_zsh_setup.sh`) irá instalar o ZSH, Oh My ZSH, configurar o 
 **Instruções:**
 
 1.  Abra seu terminal WSL (Ubuntu, por exemplo).
-2.  Baixe o arquivo usando o seguinte comando:
+2.  Execute a seguinte instrução para baixar e executar o script diretamente:
     ```bash
-    wget https://raw.githubusercontent.com/LKSFerreira/cybersecurity/main/linux_zsh_setup.sh
+    wget https://raw.githubusercontent.com/LKSFerreira/cybersecurity/main/linux_zsh_setup.sh && chmod +x linux_zsh_setup.sh && /bin/bash linux_zsh_setup.sh
     ```
-3.  Navegue até o diretório onde você salvou o script `linux_zsh_setup.sh`.
-4.  Torne o script executável com o comando:
-    ```bash
-    chmod +x linux_zsh_setup.sh
-    ```
-5.  Execute o script com o comando `bash`:
-    ```bash
-    bash ./linux_zsh_setup.sh
-    ```
-6.  O script fará a maior parte do trabalho. No final, ele irá iniciar o configurador interativo do Powerlevel10k (`p10k configure`). Siga as instruções na tela para personalizar seu tema.
+3.  O script fará a maior parte do trabalho. No final, ele irá iniciar o configurador interativo do Powerlevel10k (`p10k configure`). Siga as instruções na tela para personalizar seu tema.
 5.  Após a conclusão do script e da configuração do Powerlevel10k, feche e reabra seu terminal WSL para que todas as mudanças sejam aplicadas.
 
 **Observação sobre Cores:**
