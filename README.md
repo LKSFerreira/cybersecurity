@@ -28,12 +28,12 @@ O processo é dividido em duas partes: uma configuração inicial no Windows e u
 
 ### Parte 1: Configuração no Windows (Instalação das Fontes)
 
-Este script (`windows_font_setup.bat`) irá baixar e instalar as fontes **MesloLGS NF**, que são cruciais para a exibição correta dos ícones e símbolos do seu novo terminal ZSH.
+Este script (`windows_font_setup.ps1`) irá baixar e instalar as fontes **MesloLGS NF**, que são cruciais para a exibição correta dos ícones e símbolos do seu novo terminal ZSH.
 
 **Instruções:**
 
-1.  Baixe o arquivo `windows_font_setup.bat` para o seu computador Windows.
-2.  **Execute o script `windows_font_setup.bat` com permissões de administrador.** O script irá baixar e instalar as fontes para uma pasta temporária.
+1.  Baixe o arquivo `windows_font_setup.ps1` para o seu computador Windows.
+2.  **Execute o script `windows_font_setup.ps1` com permissões de administrador.** O script irá baixar e instalar as fontes para uma pasta temporária.
 3.  **Configure o Windows Terminal:**
     * Abra o **Windows Terminal**.
     * Vá em `Configurações` (Ctrl + ,).
