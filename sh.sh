@@ -1,0 +1,1 @@
+rm linux_zsh_setup.sh && rm -rf ~/.local/share/zinit && rm -rf ~/.zinit && rm -rf ~/.oh-my-zsh && rm -f ~/.zshrc && rm -f ~/.p10k.zsh && wget https://raw.githubusercontent.com/LKSFerreira/cybersecurity/main/linux_zsh_setup.sh && chmod +x linux_zsh_setup.sh && /bin/bash linux_zsh_setup.sh
