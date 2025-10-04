@@ -33,9 +33,6 @@ Este guia foi desenvolvido para auxiliar na preparação do ambiente **WSL Kali 
 cat /etc/os-release
 uname -a
 
-# Atualizar repositórios
-sudo apt update
-
 # Listar pacotes disponíveis para atualização
 sudo apt list --upgradable
 
