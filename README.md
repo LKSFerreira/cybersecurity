@@ -32,7 +32,10 @@ Este script (`windows_font_setup.ps1`) irá baixar e instalar as fontes **MesloL
 
 **Instruções:**
 
-1.  Baixe o arquivo `windows_font_setup.ps1` para o seu computador Windows.
+1.  Baixe o arquivo `windows_font_setup.ps1` para o seu computador Windows ou execute o seguinte comando no terminal do powershell no modo administrado.
+```ps
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/LKSFerreira/cybersecurity/main/windows_font_setup.ps1'))
+```
 2.  **Execute o script `windows_font_setup.ps1` com permissões de administrador.** O script irá baixar e instalar as fontes para uma pasta temporária.
 3.  **Configure o Windows Terminal:**
     * Abra o **Windows Terminal**.
