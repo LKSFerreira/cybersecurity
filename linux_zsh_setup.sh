@@ -116,7 +116,7 @@ echo ""
 
 # --- Passo 6: Criar e configurar o .zshrc ---
 echo_fancy "📝" "${COLOR_BOLD_MAGENTA}" "Passo 6/8: Criando o arquivo ~/.zshrc completo..."
-rm -f ~/.zshrc
+rm -f ~/.zshrc ~/.p10k.zsh
 
 cat << 'EOF' > ~/.zshrc
 # =========================================================
@@ -128,10 +128,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# 2. Define o Tema Powerlevel10k
+# 2. Oh My ZSH e Tema (A BASE DEVE VIR PRIMEIRO para ligar o compinit)
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git colored-man-pages)
+source "$ZSH/oh-my-zsh.sh"
 
-# 3. Inicializa o Zinit (O MOTOR vem primeiro)
+# 3. Inicializa o Zinit
 ZINIT_HOME="${HOME}/.local/share/zinit"
 if [[ ! -f ${ZINIT_HOME}/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager...%f"
@@ -145,7 +148,7 @@ source "${ZINIT_HOME}/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# 4. Carrega os Plugins Visuais (Eles precisam estar prontos antes do Shell carregar totalmente)
+# 4. Carrega os Plugins Visuais (Eles precisam estar prontos DEPOIS do Oh My Zsh)
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
@@ -157,15 +160,7 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
-# 6. Carrega o Oh My ZSH (O FRAMEWORK por último para não sobrescrever os plugins)
-export ZSH="$HOME/.oh-my-zsh"
-
-# ---> PLUGINS NATIVOS DO OH MY ZSH <---
-plugins=(git colored-man-pages)
-
-source "$ZSH/oh-my-zsh.sh"
-
-# 7. Carrega a configuração do Powerlevel10k
+# 6. Carrega a configuração do Powerlevel10k
 # Para configurar, execute 'p10k configure'.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 EOF
@@ -191,7 +186,7 @@ echo ""
 
 # --- Passo 8: Alterar o shell padrão para ZSH ---
 echo_fancy "🐚" "${COLOR_BOLD_MAGENTA}" "Passo 8/8: Alterando o shell padrão para ZSH..."
-if [ "$(basename "$SHELL")" != "zsh" ]; then
+if ! grep -q "^$(whoami):.*/zsh$" /etc/passwd; then
     echo_warning "Você precisará digitar sua senha para alterar o shell padrão."
     sudo chsh -s $(which zsh) $(whoami)
     echo_success "Shell padrão alterado para ZSH."
@@ -218,7 +213,7 @@ echo_fancy "✅" "${COLOR_BOLD_GREEN}" "  • zsh-autosuggestions: Sugestões em
 echo_fancy "✅" "${COLOR_BOLD_GREEN}" "  • zsh-completions: TAB para autocompletar com informações"
 echo ""
 
-# --- Contador regressivo de 5 segundos ---
+# --- Contador regressivo de 7 segundos ---
 echo_fancy "🔄" "${COLOR_BOLD_MAGENTA}" "O terminal será fechado em:"
 for i in 7 6 5 4 3 2 1; do
     echo_fancy "⏱️" "${COLOR_BOLD_CYAN}" "   $i..."
